@@ -16,13 +16,12 @@ const App = () => {
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
-
     setMovies(data.Search);
   };
 
   return (
     <div className="app">
-      <h1> MovieLand</h1>
+      <h1> Movielauda</h1>
 
       <div className="search">
         <input
